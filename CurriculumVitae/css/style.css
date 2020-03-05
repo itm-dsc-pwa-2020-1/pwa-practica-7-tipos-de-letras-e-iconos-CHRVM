@@ -1,0 +1,61 @@
+body{
+    width: 100%;
+    margin: 0px; 
+    padding: 0px;
+
+   }
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: stretch;
+  }
+
+@font-face{
+    font-family: "Roboto";
+    src: url(../font/Roboto-Bold.ttf)format("truetype");
+    }
+@font-face{
+    font-family: "Tangerine";
+    src: url(../font/Tangerine_Bold.ttf)format("truetype");
+    }
+@font-face{
+    font-family: "Maximum";
+    src: url(../font/Maximum-impact.ttf)format("truetype");
+    }
+
+.title{
+    font-family: Tangerine;
+    font-size: 40px;
+    grid-column: 1/9;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+a{background-color: #fff; color:#000;}
+
+.exp{
+    font-family: Roboto;
+    grid-column: 4/8;
+    background-color:#f3f3f3;
+}
+.exp:hover{ transition: all .2s ease-in; transform: translateY(-8px);}
+.text1{position: relative; left: 50px; top: 15px;}
+h4{color: #3a3a3a;}
+
+.pic{
+    grid-column: 2/4;
+}
+.pic:hover{ transition: all .2s ease-in; transform: translateY(-8px);}
+
+.data{
+    font-family: Maximum;
+    grid-column: 1/9;
+    font-size: 30px;
+    background-color: #000;
+text-align: center;}
+ul.info li { display: inline-block ; padding-right: 20px; position: relative; top: 6px; }
+h3{position: relative; bottom: 10px;}
+.l1 :hover{ transition: all .2s ease-in; transform: translateY(-8px);}
+
